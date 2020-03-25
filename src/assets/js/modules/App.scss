@@ -1,0 +1,47 @@
+body {
+    padding: 50px;
+}
+
+.tic-tac-toe {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    margin: 0 auto;
+  
+    > div.tt-greed {
+        width: 33.3%;
+        height: 33.3%;
+        border:1px solid #000;
+        box-sizing: border-box;
+        float: left;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        &[blocked=true] {
+            cursor: not-allowed;
+            &[value=Cross] {
+                background-image: url(cancel.svg);
+            }
+            &[value=Zero] {
+                background-image: url(zero.svg);
+            }
+        }
+    }
+}
+.both {
+    clear:both;
+}
+.winner , .next{
+    text-align: center;
+    margin: 20px 0;
+}
+.restart {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    background: #cec;
+    margin: 20px auto;
+    color:#000;
+}
