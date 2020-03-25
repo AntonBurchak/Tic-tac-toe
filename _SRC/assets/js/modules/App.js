@@ -146,7 +146,7 @@ class App extends React.Component {
 				</div>
 				
 				{this.state.current >= 1 ? (
-					<a href="/" className="restart" onClick={this.restart}>
+					<a href="../Tic-tac-toe" className="restart" onClick={this.restart}>
 						Restart
 					</a>
 				) : null}
